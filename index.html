@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		Creating Search Bar using HTML
+		CSS and Javascript
+	</title>
+
+	<!-- linking the stylesheet(CSS) -->
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+
+	<!-- input tag -->
+	<!-- <input id="searchbar" onkeyup="search_movie()" type="text" name="search" placeholder="Search movies.."> -->
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<form action="">
+		<input type="search" id="searchbar" required onkeyup="search_movie()" >
+		<i class="fa fa-search"></i>
+	</form>
+
+	<!-- ordered list -->
+	<ul id='list'>
+		<li class="movie">12 Angry Men</li>
+		<li class="movie">A Separation</li>
+		<li class="movie">Alice in Wonderland</li>
+		<li class="movie">Alive</li>
+		<li class="movie">All Quiet on the Western Front</li>
+		<li class="movie">American Beauty</li>
+		<li class="movie">American Gangster</li>
+		<li class="movie">American History X</li>
+		<li class="movie">Apocalypto</li>
+		<li class="movie">Beetlejuice</li>
+		<li class="movie">Before Midnight</li>
+		<li class="movie">Before Sunrise</li>
+		<li class="movie">Before Sunset</li>
+		<li class="movie">Big Nothing</li>
+		<li class="movie">Birdman or (The Unexpected Virtue of Ignorance)</li>
+		<li class="movie">Black Swan</li>
+		<li class="movie">Boyhood</li>
+		<li class="movie">Calvary</li>
+		<li class="movie">Casablanca</li>
+		<li class="movie">Casino</li>
+		<li class="movie">Casino Royale</li>
+		<li class="movie">Catch Me If You Can</li>
+		<li class="movie">Chasing Amy</li>
+		<li class="movie">Chinatown</li>
+		<li class="movie">Chocolat</li>
+		<li class="movie">City of God</li>
+		<li class="movie">Cloud Atlas</li>
+		<li class="movie">Corpse Bride</li>
+		<li class="movie">Crash</li>
+		<li class="movie">Crocodile Dundee</li>
+		<li class="movie">Dallas Buyers Club</li>
+		<li class="movie">Das Boot</li>
+		<li class="movie">Despicable Me</li>
+		<li class="movie">Despicable Me 2</li>
+		<li class="movie">Django Unchained</li>
+		<li class="movie">Downfall</li>
+		<li class="movie">Ex Machina</li>
+		<li class="movie">Flight</li>
+		<li class="movie">Forrest Gump</li>
+		<li class="movie">Frida</li>
+		<li class="movie">Gandhi</li>
+		<li class="movie">Gattaca</li>
+		<li class="movie">God Bless America</li>
+		<li class="movie">Gran Torino</li>
+		<li class="movie">Hellboy II: The Golden Army</li>
+		<li class="movie">Hotel Rwanda</li>
+		<li class="movie">I-See-You.Com</li>
+		<li class="movie">Ice Age</li>
+		<li class="movie">Inception</li>
+		<li class="movie">Indochine</li>
+		<li class="movie">Interstellar</li>
+		<li class="movie">Kiss Kiss Bang Bang</li>
+		<li class="movie">L.A. Confidential</li>
+		<li class="movie">Les Misérables</li>
+		<li class="movie">Lock, Stock and Two Smoking Barrels</li>
+		<li class="movie">Looper</li>
+		<li class="movie">Lost in Translation</li>
+		<li class="movie">Lucky Number Slevin</li>
+		<li class="movie">Madagascar</li>
+		<li class="movie">Madagascar 3: Europe's Most Wanted</li>
+		<li class="movie">Madagascar: Escape 2 Africa</li>
+		<li class="movie">Mary and Max</li>
+		<li class="movie">Match Point</li>
+		<li class="movie">Memento</li>
+		<li class="movie">Midnight Express</li>
+		<li class="movie">Midnight in Paris</li>
+		<li class="movie">Moneyball</li>
+		<li class="movie">Mr. & Mrs. Smith</li>
+		<li class="movie">Nebraska</li>
+		<li class="movie">No Country for Old Men</li>
+		<li class="movie">North by Northwest</li>
+		<li class="movie">Oblivion</li>
+		<li class="movie">Oldboy</li>
+		<li class="movie">Once Upon a Time in America</li>
+		<li class="movie">One Flew Over the Cuckoo's Nest</li>
+		<li class="movie">Original Sin</li>
+		<li class="movie">Pacific Rim</li>
+		<li class="movie">Pan's Labyrinth</li>
+		<li class="movie">Pirates of the Caribbean: At World's End</li>
+		<li class="movie">Pirates of the Caribbean: On Stranger Tides</li>
+		<li class="movie">Pirates of the Caribbean: The Curse of the Black Pearl</li>
+		<li class="movie">Planet 51</li>
+		<li class="movie">Psycho</li>
+		<li class="movie">Pulp Fiction</li>
+		<li class="movie">Ratatouille</li>
+		<li class="movie">Rear Window</li>
+		<li class="movie">Requiem for a Dream</li>
+		<li class="movie">Reservoir Dogs</li>
+		<li class="movie">Scarface</li>
+		<li class="movie">Shogun</li>
+		<li class="movie">Shrek</li>
+		<li class="movie">Shrek 2</li>
+		<li class="movie">Shrek Forever After</li>
+		<li class="movie">Shutter Island</li>
+		<li class="movie">Sid and Nancy</li>
+		<li class="movie">Silver Linings Playbook</li>
+		<li class="movie">Sin City</li>
+		<li class="movie">Slumdog Millionaire</li>
+		<li class="movie">Snatch</li>
+		<li class="movie">Spirited Away</li>
+		<li class="movie">Spotlight</li>
+		<li class="movie">Stardust</li>
+		<li class="movie">Sunset Boulevard</li>
+		<li class="movie">Taxi Driver</li>
+		<li class="movie">The Artist</li>
+		<li class="movie">The Beach</li>
+		<li class="movie">The Big Short</li>
+		<li class="movie">The Cotton Club</li>
+		<li class="movie">The Deer Hunter</li>
+		<li class="movie">The English Patient</li>
+		<li class="movie">The Grand Budapest Hotel</li>
+		<li class="movie">The Great Beauty</li>
+		<li class="movie">The Great Gatsby</li>
+		<li class="movie">The Hangover</li>
+		<li class="movie">The Hateful Eight</li>
+		<li class="movie">The Hitchhiker's Guide to the Galaxy</li>
+		<li class="movie">The Hobbit: An Unexpected Journey</li>
+		<li class="movie">The Hobbit: The Desolation of Smaug</li>
+		<li class="movie">The Imitation Game</li>
+		<li class="movie">The Impossible</li>
+		<li class="movie">The Intouchables</li>
+		<li class="movie">The Last Samurai</li>
+		<li class="movie">The Lives of Others</li>
+		<li class="movie">The Lord of the Rings: The Fellowship of the Ring</li>
+		<li class="movie">The Lord of the Rings: The Return of the King</li>
+		<li class="movie">The Lord of the Rings: The Two Towers</li>
+		<li class="movie">The Martian</li>
+		<li class="movie">The Pianist</li>
+		<li class="movie">The Quiet American</li>
+		<li class="movie">The Rum Diary</li>
+		<li class="movie">The Shawshank Redemption</li>
+		<li class="movie">The Shining</li>
+		<li class="movie">The Silence of the Lambs</li>
+		<li class="movie">The Social Network</li>
+		<li class="movie">The Theory of Everything</li>
+		<li class="movie">The Third Man</li>
+		<li class="movie">The Truman Show</li>
+		<li class="movie">The Wolf of Wall Street</li>
+		<li class="movie">To Kill a Mockingbird</li>
+		<li class="movie">Troy</li>
+		<li class="movie">V for Vendetta</li>
+		<li class="movie">Valkyrie</li>
+		<li class="movie">Vertigo</li>
+		<li class="movie">Vicky Cristina Barcelona</li>
+		<li class="movie">WALL·E</li>
+		<li class="movie">Whiplash</li>
+	</ul>
+
+	<!-- linking javascript -->
+	<script src="./movie.js"></script>
+</body>
+
+</html>
